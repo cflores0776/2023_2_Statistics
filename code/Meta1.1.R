@@ -1,7 +1,7 @@
 install.packages("readxl")
 library(readxl)
 VtasTot <- read_excel("data/VentasTotalEstadística.xls")
-warnings()
+warnings() #MarcaWarnings, no son errores
 View(VtasTot)
 
 #OBTENER MEDIDAS DE TENDENCIA CENTRAL
@@ -49,3 +49,4 @@ cat("Moda de UnitCost:", mode_UnitCost, "\n")
 cat("Moda de TotalCost:", mode_TotalCost, "\n")
 cat("Moda de UnitPrice:", mode_UnitPrice, "\n")
 cat("Moda de TotalPrice:", mode_TotalPrice, "\n")
+
