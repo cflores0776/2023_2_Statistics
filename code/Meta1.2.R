@@ -4,7 +4,7 @@ install.packages("ggplot2")
 library(readxl)
 library(ggplot2)
 
-VtasTot <- read_excel("Data/ProcessData/VentasTotalEstadística.xls")
+VtasTot <- read_excel("data/VentasTotalEstadística.xls")
 warnings()
 View(VtasTot)
 

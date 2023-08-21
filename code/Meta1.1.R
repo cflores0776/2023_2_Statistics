@@ -1,7 +1,7 @@
 install.packages("readxl")
 library(readxl)
 VtasTot <- read_excel("data/VentasTotalEstadística.xls")
-warnings() #MarcaWarnings, no son errores
+warnings() #Marca Warnings, no son errores
 View(VtasTot)
 
 #OBTENER MEDIDAS DE TENDENCIA CENTRAL
