@@ -14,6 +14,12 @@ prob_al_menos_5_exitos <- 1 - pbinom(4, num_ensayos, prob_exito)
 # Imprimir el resultado
 print(prob_al_menos_5_exitos)
 
+# Generar un vector de números de éxitos (desde 0 hasta num_ensayos)
+num_exitos <- 0:num_ensayos
+
+# Calcular las probabilidades para cada número de éxitos utilizando la distribución binomial
+probabilidades <- dbinom(num_exitos, num_ensayos, prob_exito)
+
 # Crear un gráfico de la distribución binomial
 ggplot(data.frame(num_exitos, probabilidades), aes(num_exitos, probabilidades)) +
   geom_bar(stat = "identity", fill = "skyblue", width = 0.5) +
@@ -65,3 +71,4 @@ ggplot(data.frame(x, probabilidades), aes(x, probabilidades)) +
        x = "Número de Reservas",
        y = "Probabilidad") +
   theme_minimal()
+
